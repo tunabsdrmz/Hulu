@@ -2,14 +2,14 @@ import Image from "next/image"
 import { ThumbUpIcon } from "@heroicons/react/outline"
 
 function Thumbnail({result}) {
-    const BASE_URL = "https://image.tmdb.org/t/p/w500" 
+    const BASE_URL = "https://image.tmdb.org/t/p/original/" 
   return (
     <div className="p-2 group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50">
         <Image 
         src={`
-        ${BASE_URL}${result.backdrop_path || result.poster_path }`
+        https://image.tmdb.org/t/p/original/${result.backdrop_path || result.poster_path }`
         ||
-        `${BASE_URL}${result.poster_path}`
+        `https://image.tmdb.org/t/p/original/${result.poster_path}`
         }
         layout="responsive"
         height={1080}
