@@ -14,6 +14,7 @@ function Thumbnail({result}) {
         layout="responsive"
         height={1080}
         width={1920}
+        alt='image'
         />
         <div className="p-2">
             <p className="truncate max-w-md" >{result.overview}</p>
